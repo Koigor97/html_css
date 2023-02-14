@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Code Magazine | Demo</title>
+  <meta name="description" content="A basic demo webpage mimicking a blog page" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+  <header class="main-header">
+    <h1>📘 The Code Magazine</h1>
+    <nav>
+      <a href="./">Blog</a>
+      <a href="./">Challenges</a>
+      <a href="./">Flexbox</a>
+      <a href="./">CSS-Grid</a>
+    </nav>
+  </header>
+
+  <div class="content-box">
+    <article>
+      <header class="article-header">
+        <h2>The Basic Language of the Web: HTML!</h2>
+        <img class="author-img" src="images/laura-jones.jpg" width="50" height="50"
+          alt="image of the author Laura Jones">
+        <p id="author">
+          Posted by
+          <strong>Laura Jones</strong>
+          on Monday, June 21st 2023
+        </p>
+        <img src="images/post-img.jpg" width="600" height="200" alt="image of code on a screen">
+      </header>
+
+      <p>
+        All modern websites and web applications are built using three
+        <em>fundamental</em>
+        technologies: HTML, CSS and JavaScript. These are the languages of the
+        web.
+      </p>
+      <p>
+        In this post, let's focus on HTML. We will learn what HTML is all about,
+        and why you too should learn it.
+      </p>
+
+      <h3>What is HTML?</h3>
+      <p>
+        HTML stands for <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage.
+        It's a markup language that
+        web developers use to structure and describe the content of a webpage
+        (not a programming language).
+      </p>
+      <p>
+        HTML consists of elements that describe different types of content:
+        paragraphs, links, headings, images, video, etc. Web browsers understand
+        HTML and render HTML code as websites.
+      </p>
+
+      <p>In HTML, each element is made up of 3 parts:</p>
+      <ol>
+        <li>The opening tag</li>
+        <li>The closing tag</li>
+        <li>The actual element</li>
+      </ol>
+      <p>You can learn more at the <a class="mdn" href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web
+          Docs.</a> </p>
+
+      <h3>Why should you learn HTML?</h3>
+      <p>There are countless reasons for learning the fundamental language of the web. Here are 5 of them:</p>
+      <ul>
+        <li>To be able to use the fundamental web dev language</li>
+        <li>To hand-craft beautiful websites instead of relying on tools like Worpress or Wix</li>
+        <li>To build web applications</li>
+        <li>To impress friends</li>
+        <li>To have fun 😃</li>
+      </ul>
+      <p>Hopefully you learned something new here. See you next time!</p>
+    </article>
+
+    <aside>
+      <h4 class="aside-caption">Related posts</h4>
+      <ul>
+        <li class="related-post">
+          <img src="images/related-1.jpg" alt="image of a man typing on a computer" width="75" height="75">
+          <div class="aside-link-box">
+            <a href="./">How to learn Web Development</a>
+            <p class="related-author">By Fredrick Douglas</p>
+          </div>
+        </li>
+
+        <li class="related-post">
+          <img src="images/related-2.jpg" alt="image of lightning storm" width="75" height="75">
+          <div class="aside-link-box">
+            <a href="./">The Unknown Power of CSS</a>
+            <p class="related-author">By Nelson Mandela</p>
+          </div>
+        </li>
+
+        <li class="related-post">
+          <img src="images/related-3.jpg" alt="image of a code" width="75" height="75">
+          <div class="aside-link-box">
+            <a href="./">Why JavaScript is Awesome</a>
+            <p class="related-author">By Samia Suluhu Hassan</p>
+          </div>
+        </li>
+      </ul>
+    </aside>
+  </div>
+
+
+  <footer>
+    <p class="footer">Copyright &copy; 2023 by Code Magazine</p>
+  </footer>
+
+</body>
+
+</html>
