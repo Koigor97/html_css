@@ -1,0 +1,102 @@
+:root {
+    --title-font: "Montserrat", sans-serif;
+    --body-font: "Lato", sans-serif;
+
+    --bg-gradient1: #f08f8d;
+    --bg-gradient2: #822b20;
+    --bg-gradient3: #481f1b;
+    --bg-gradient4: #e0730e;
+
+    --content-bg: hsl(359, 79%, 21%);
+    --button-bg: #9e9c48;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 50%;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background-image: linear-gradient(120deg, var(--bg-gradient4), var(--bg-gradient2), var(--bg-gradient3));
+    font-family: var(--body-font);
+    font-size: 1.8rem;
+    line-height: 1.5;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+}
+
+header img {
+    width: 20rem;
+    border-radius: 50%;
+}
+
+main {
+    background: hsl(26 16% 44% / .6);
+    backdrop-filter: blur(5rem);
+    padding-inline: 2rem;
+    padding-block: 3rem;
+    width: 100%;
+
+}
+
+
+main li {
+    list-style: none;
+}
+
+h1 {
+    font-family: var(--title-font);
+    text-shadow: 4px 2px 1.5rem rgba(240, 236, 236, 0.884);
+}
+
+footer {
+    background-color: var(--button-bg);
+    text-align: center;
+    margin-block-start: 2rem;
+    padding-block: 1rem;
+    border-radius: 3rem;
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 32.5em) {
+    html {
+        font-size: 62.5%;
+    }
+
+    body {
+        padding: 3rem;
+    }
+
+    header img {
+        width: 30rem;
+    }
+
+    main,
+    footer {
+        width: 80vw;
+        border-radius: 2rem;
+    }
+
+
+}
+
+@media only screen and (min-width: 56.2em) {
+    body {
+        padding: none;
+    }
+
+
+}
