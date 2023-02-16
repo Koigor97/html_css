@@ -242,6 +242,7 @@ h3 {
 
 footer {
   color: var(--footer-color);
+  margin-block-start: 6rem;
   margin-block-end: 4.8rem;
   font-size: 1.4rem;
 
@@ -331,7 +332,7 @@ footer {
 
   .grid-3-cols {
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 8rem;
+    column-gap: 7rem;
   }
 
   .grid-3-cols div {

@@ -38,7 +38,7 @@ body {
 }
 
 header img {
-    width: 20rem;
+    width: 15rem;
     border-radius: 50%;
 }
 
@@ -51,9 +51,14 @@ main {
 
 }
 
-
-main li {
+.links {
     list-style: none;
+    
+}
+
+.links li a {
+    color: var(--bg-gradient1);
+    text-decoration: none;
 }
 
 h1 {
@@ -81,12 +86,12 @@ footer {
     }
 
     header img {
-        width: 30rem;
+        width: 20rem;
     }
 
     main,
     footer {
-        width: 80vw;
+        width: 85vw;
         border-radius: 2rem;
     }
 
@@ -98,5 +103,8 @@ footer {
         padding: none;
     }
 
-
+    main,
+    footer {
+        width: 60vw;
+    }
 }
