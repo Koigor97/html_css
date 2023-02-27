@@ -1,0 +1,404 @@
+:root {
+    --body-fonts: "Inter", sans-serif;
+    --base-color: #14532D;
+    --tint-color: #e06f54;
+    --cool-grey: #1F2937;
+    --faded-grey: #b1b5b916;
+    --dark-grey: #b1b5b939;
+    --tint2-color: #BBF7D0;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 50%;
+}
+
+body {
+    color: var(--cool-grey);
+    font-family: var(--body-fonts);
+    line-height: 1;
+    font-size: 1.8rem;
+    padding: 2rem;
+}
+
+body > h1 {
+    color: var(--base-color);
+    text-align: center;
+    margin: 5rem auto;
+    padding-block-end: 1rem;
+    border-bottom: 5px solid var(--tint-color);
+    
+
+}
+
+/* -------------------------------------------- */
+/* ------------The Accordion CSS section------- */
+/* -------------------------------------------- */
+.accordion {
+    /* width: 100vw; */
+    margin: 10rem auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.FAQ {
+    box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.1);
+    padding: 2.4rem;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 2.4rem;
+    row-gap: 3.2rem;
+    align-items: center;
+}
+
+.number {
+    color: #656e7b61;
+}
+
+.number,
+.text {
+    /* color: var(--tint-color); */
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    stroke: var(--tint-color);
+}
+
+.open {
+    border-top: .4rem solid var(--tint-color);
+}
+
+.open .hidden-box {
+    display: block;
+}
+
+.open .number,
+.open .text {
+    color: var(--tint-color);
+}
+
+.hidden-box {
+    grid-column: 2 / 3;
+    display: none;
+}
+
+.hidden-box p {
+    line-height: 1.5;
+    margin-block-end: 2.4rem;
+}
+
+.hidden-box ul {
+    color: #83888c;
+    margin-inline-start: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* ------------------------------------------------ */
+/* ------------The Carousel CSS Section------------ */
+/* ------------------------------------------------ */
+
+.carousel img {
+    /* height: 18rem; */
+    position: relative;
+    top: 0;
+    left: -5%;
+    transform: translate(0, -5%);
+    width: 10rem;
+    border-radius: .8rem;
+    transform: scale(1.7);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.carousel {
+    color: #fff;
+    background-color: var(--base-color);
+    /* width: 80rem; */
+    margin: 10rem auto;
+    border-radius: .8rem;
+    padding: 3.2rem 4.8rem 3.2rem 8.6rem;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+}
+
+.testimonial-text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 3.2rem;
+    margin-block-start: 1.5rem;
+}
+
+.testimonial-author {
+    font-size: 1.4rem;
+    margin-bottom: .4rem;
+}
+
+.author-job {
+    font-size: 1.2rem;
+}
+
+.testimonial-author,
+.author-job {
+    color: var(--tint2-color);
+}
+
+.testimonial-text,
+.testimonial-author,
+.author-job {
+    text-align: center;
+}
+
+.btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-left {
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.btn-right {
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+.controls {
+    height: 2.4rem;
+    width: 2.4rem;
+    stroke: var(--base-color);
+}
+
+.dots {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 38px);
+
+    display: flex;
+    gap: 1.2rem;
+}
+
+.dot {
+    height: 1.2rem;
+    width: 1.2rem;
+    background-color: #fff;
+    border: .2rem solid var(--base-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--base-color);
+}
+
+/* ------------------------------------------- */
+/* -------------The Table CSS section--------- */
+/* ------------------------------------------- */
+
+table {
+    margin: 15rem auto;
+    border-collapse: collapse;
+    /* font-size: 1.8rem; */
+}
+
+th,
+td {
+    padding: 1.6rem 2.4rem;
+    text-align: left;
+}
+
+thead th {
+    background-color: var(--tint2-color);
+    width: 15%;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--faded-grey);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--dark-grey);
+}
+
+/* ------------------------------------------------ */
+/* -------------The Pagination CSS section--------- */
+/* ------------------------------------------------ */
+
+.pagination-box {
+    /* width: 800px; */
+    margin: 10rem auto;
+    font-size: 1.8rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+
+}
+
+.pag-svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    stroke: var(--tint-color);
+}
+
+.right {
+    order: 1;
+}
+
+.btn-pag {
+    width: 4.8rem;
+    height: 4.8rem;
+    background: none;
+    border: .1rem solid var(--tint-color);
+    border-radius: 50%;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numbers:link,
+.numbers:visited {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--cool-grey);
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 50%;
+}
+
+.pagination-box span {
+    color: var(--tint-color);
+}
+
+.numbers:hover,
+.btn-pag:hover,
+.numbers:active,
+.pagination-box .current {
+    background-color: var(--tint-color);
+    color: #fff;
+}
+
+.btn-pag:hover>* {
+    stroke: #fff;
+}
+
+
+
+@media only screen and (min-width: 37.5em) {
+    body {
+        padding: 0;
+    }
+
+    body > h1 {
+        width: 80vw;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+
+    /* -------------------------------------------- */
+    /* ------------The Accordion CSS section------- */
+    /* -------------------------------------------- */
+    .accordion {
+        width: 80vw;
+    }
+
+    .number,
+    .text {
+        font-size: 2.4rem;
+    }
+
+    /* ------------------------------------------------ */
+    /* ------------The Carousel CSS Section------------ */
+    /* ------------------------------------------------ */
+
+    .carousel img {
+        height: 18rem;
+        width: 15rem;
+        position: static;
+    }
+
+    .carousel {
+        width: 80vw;
+        flex-direction: row;
+        gap: 8.6rem;
+    }
+
+    .testimonial-text {
+        margin-block-start: 0;
+    }
+
+    .testimonial-text,
+    .testimonial-author,
+    .author-job {
+        text-align: left;
+    }
+
+    /* ------------------------------------------- */
+    /* -------------The Table CSS section--------- */
+    /* ------------------------------------------- */
+
+    table {
+        width: 80vw;
+    }
+
+    thead th {
+        width: 25%;
+    }
+
+    /* ------------------------------------------------ */
+    /* -------------The Pagination CSS section--------- */
+    /* ------------------------------------------------ */
+
+    .pagination-box {
+        width: 80vw;
+    }
+
+}
+
+@media only screen and (min-width: 56.2em) {
+    .accordion, .carousel, table, .pagination-box, body > h1 {
+        width: 80rem;
+    }
+}

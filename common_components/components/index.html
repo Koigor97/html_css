@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Components</title>
+</head>
+
+<body>
+    <h1>Common Web Component</h1>
+    <div class="accordion">
+        <div class="FAQ ">
+            <span class="number">01</span>
+            <span class="text">Do you offer bulk or wholesale pricing?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+            <div class="hidden-box">
+                <p> Yes, we offer bulk and wholesale pricing for certain products. Please contact our sales team for
+                    more information on our pricing and discounts for bulk orders. We're happy to work with you to find
+                    the best solution for your needs.</p>
+            </div>
+        </div>
+
+        <div class="FAQ open">
+            <span class="number">02</span>
+            <span class="text">What payment methods do we offer ?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+            <div class="hidden-box">
+                <p> We offer several convenient methods of payment, including credit and debit cards (Visa, Mastercard,
+                    American Express), PayPal, and bank transfers. You can select your preferred payment method during
+                    the checkout process. If you have any questions or concerns, please feel free to contact us and
+                    we'll be happy to assist you.</p>
+                <ul>
+                    <li>On the checkout page, select the "credit or debit card" option for payment.</li>
+                    <li>Enter your card details, including the card number, expiration date, and security code.</li>
+                    <li>Enter the billing address associated with the card.</li>
+                    <li>Review the order details and make sure they are correct.</li>
+                    <li>Click the "submit" or "pay" button to complete the transaction.</li>
+                    <li>Wait for the payment to be processed and verified.</li>
+                    <li>Once the payment is verified, you will receive a confirmation of the transaction and an email
+                        receipt.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="FAQ">
+            <span class="number">03</span>
+            <span class="text">Can I modify or cancel my order?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+            <div class="hidden-box">
+                <p> If you need to modify or cancel your order, please contact our customer support team as soon as
+                    possible. We'll do our best to accommodate your request, but please note that orders may be
+                    processed quickly, especially during peak periods, so we can't guarantee that we'll be able to make
+                    changes once an order has been submitted.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------ -->
+    <!-- ----------The Carousel build up section--------- -->
+
+    <div class="carousel">
+        <img src="images/bride.webp" alt="bride image">
+        <blockquote class="testimonial">
+            <p class="testimonial-text">
+                "Maximillian was an excellent wedding photographer. He was professional, easy to work with, and captured
+                our special day beautifully. We highly recommend him to anyone looking for a skilled and personable
+                wedding photographer."
+            </p>
+            <p class="testimonial-author">Fatima Bangura</p>
+            <p class="author-job">Bride</p>
+        </blockquote>
+
+        <button class="btn btn-left">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="controls">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+        </button>
+
+        <button class="btn btn-right">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="controls">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+        </button>
+        <div class="dots">
+            <button class="dot active">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------ -->
+    <!-- ----------The Table build-up section------ -->
+    <table>
+        <thead>
+            <tr>
+                <th>Chairs</th>
+                <th>The Laid Back</th>
+                <th>The Worker Bee</th>
+                <th>The Chair 4/2</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>Width</th>
+                <td>80 cm</td>
+                <td>60 cm</td>
+                <td>220 cm</td>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td>100 cm</td>
+                <td>110 cm</td>
+                <td>90 cm</td>
+            </tr>
+            <tr>
+                <th>Depth</th>
+                <td>70 cm</td>
+                <td>65 cm</td>
+                <td>80 cm</td>
+            </tr>
+            <tr>
+                <th>Weight</th>
+                <td>16 kg</td>
+                <td>22 kg</td>
+                <td>80 kg</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ------------------------------------------ -->
+    <!-- --------The Pagination build-up section---- -->
+    <div class="pagination-box">
+        <button class="btn-pag">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="pag-svg ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+        </button>
+        <button class="btn-pag  right">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="pag-svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+        </button>
+        <a href="#" class="numbers">1</a>
+        <a href="#" class="numbers">2</a>
+        <a href="#" class="numbers">3</a>
+        <a href="#" class="numbers">4</a>
+        <a href="#" class="numbers current">5</a>
+        <a href="#" class="numbers">6</a>
+        <span>...</span>
+        <a href="#" class="numbers">23</a>
+    </div>
+</body>
+
+</html>
