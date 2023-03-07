@@ -1,0 +1,42 @@
+.hero-section {
+    background-color: $tertiary-color;
+
+    &__hero {
+        max-width: 130rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding-inline: 3.2rem;
+
+        &--img-box {
+
+            &-hero-image {
+                width: 100%;
+            }
+        }
+
+        &--meet-the-team {
+            color: $font-color-4;
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+
+            &-img {
+                display: flex;
+
+                & img {
+                    height: 6.8rem;
+                    width: 6.8rem;
+                    border-radius: 50%;
+                    margin-inline-start: -1rem;
+                    border: 3px solid $light-grey-2;
+                }
+
+            }
+
+            & p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

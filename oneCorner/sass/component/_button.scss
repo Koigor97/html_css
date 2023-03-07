@@ -1,0 +1,37 @@
+.hero-section {
+    &__hero {
+
+        & .btn:where(:link, :visited) {
+            @include link_button(2, $heading-font, 1.6, 3.2);
+            border-radius: 2rem;
+            transition: all .2s;
+        }
+
+        & .btn--cta:where(:link, :visited) {
+            @include btn-visual($font-color-3, $secondary-color)
+        }
+        & .btn--cta:hover {
+            @include btn-visual(current, $accent-color-2);
+        }
+
+        & .btn--outline:where(:link, :visited) {
+            @include btn-visual($font-color-shade, $accent-color-3)
+        }
+
+        & .btn--outline:hover {
+            @include btn-visual($accent-color-3, transparent);
+            outline: 2px solid $accent-color-3;
+        }
+
+        & .btn--cta:hover,
+        & .btn--outline:hover {
+            transform: translateY(-1.8px);
+        }
+
+        & .btn--cta:active, 
+        & .btn--outline:active {
+            transform: translateY(1px);
+        }
+
+    }
+}

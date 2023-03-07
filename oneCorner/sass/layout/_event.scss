@@ -1,0 +1,22 @@
+.events {
+
+    &__event-box {
+        height: 30%;
+        max-width: 130rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5rem;
+        padding-inline: 3.2rem;
+        margin-block-end: 15rem;
+
+        &--weekly-event {
+            
+
+            & div img {
+                max-width: 100%;
+                border-radius: 1rem;
+            }
+
+        }
+    }
+}

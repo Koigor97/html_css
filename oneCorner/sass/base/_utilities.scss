@@ -1,0 +1,44 @@
+.font-bold{
+    font-weight: 500;
+} 
+.font-bolder {
+    font-weight: 700;
+}
+
+.heading-line-height {
+    line-height: 1.05;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+// MARGINS
+.margin-um {
+    margin-block-start: 8rem;
+}
+.margin-bs {
+    margin-block-end: 3.2rem;
+}
+.margin-bm {
+    margin-block-end: 4.8rem;
+}
+.margin-bl {
+    margin-block-end: 5.5rem;
+}
+.margin-rs {
+    margin-inline-end: 2.5rem;
+}
+.margin-ub {
+    margin-block-start: 5.5rem;
+    margin-block-end: 7rem;
+}
+
+.padding-bs {
+    padding-block-start: 10rem;
+    padding-block-end: 25rem;
+}
+
+.gap {
+    gap: 9.6rem;
+}

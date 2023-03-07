@@ -1,0 +1,29 @@
+.featuredIn {
+    
+
+    &__featured-box {
+        background-color: $light-grey-2;
+        max-width: 130rem;
+        padding-inline: 3.2rem;
+        padding-block: 3rem 6rem;
+        border-radius: 1rem;
+        
+        position: relative;
+        top: 50%;
+        left: 0%;
+        transform: translate(0, -50%);
+
+        &--brands {
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            & img {
+                max-width: 100%;
+                filter: brightness(0) drop-shadow(2px 4px 4px #00000069);
+                opacity: 0.25;
+            }
+        }
+    }
+}

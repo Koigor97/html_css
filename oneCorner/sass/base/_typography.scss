@@ -1,0 +1,165 @@
+/*
+      -SPACING SYSTEM (px) to (rem) in it application
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      
+     - FONT SIZE SYSTEM (px) to (rem) in it application
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+body {
+    color: $font-color-2;
+    font-family: $body-font;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.5;
+
+}
+
+// The hero section CSS
+.hero-section {
+    &__hero {
+
+        & .heading-primary {
+            color: $font-color-3;
+            font-family: $heading-font;
+            font-size: 4.5rem;
+            letter-spacing: -0.5px;
+
+            & span:not(:last-of-type) {
+                color: $secondary-color;
+            }
+
+            & span:last-of-type {
+                border-bottom: 6px double $secondary-color;
+
+            }
+        }
+
+        &--text-box {
+            & p {
+                color: $font-color-4;
+                font-size: 2rem;
+
+                & span {
+                    color: $accent-color-2;
+                }
+            }
+        }
+    }
+}
+
+// Global Heading CSS
+.secondary-heading {
+    font-size: 4rem;
+    display: inline-block;
+    border-bottom: 5px double $accent-color-2;
+}
+
+.secondary-heading,
+.heading-tertiary {
+    color: $font-color-shade-3;
+    font-family: $heading-font;
+}
+
+// The Event section CSS
+.events {
+
+
+    &__event-box h3 {
+        font-family: $heading-font;
+    }
+
+    &__event-caption-box {
+        text-align: center;
+        max-width: 130rem;
+
+    }
+
+    &__event-box>* {
+        & span {
+            color: $font-color-shade-2;
+            display: inline-block;
+            font-size: 8rem;
+        }
+
+        & h3 {
+            font-size: 2.5rem;
+        }
+
+        & p {
+            color: $font-color-shade-3;
+        }
+    }
+}
+
+// The Feature section CSS
+.featuredIn {
+    color: #29292955;
+    font-size: 2rem;
+    text-align: center;
+
+    &__featured-box--feature-caption {
+        margin-block-end: 1rem;
+    }
+}
+
+// The DIY Meals section CSS
+.meals {
+    // color: $font-color-shade-3;
+
+    &__diy-meal-box {
+
+        &--intro {
+            text-align: center;
+            margin-block-end: 10rem;
+        }
+
+        &--intro h2 {
+            margin-block-start: 4rem;
+            margin-block-end: 2rem;
+        }
+
+        &--intro p {
+            max-width: 80rem;
+            margin: 0 auto;
+
+        }
+
+        &--grid-box--food-grid {
+
+            & h3 {
+                margin-block-end: 1rem;
+            }
+
+            & .ingredient-box p, & .instruction-box p {
+                margin-block-end: 5px;
+                font-size: 1.7rem;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+        & .diy-list, & .diy-order-list, & .nutri-facts {
+            list-style: none;
+            & li {
+                display: flex;
+                align-items: start;
+                gap: 5px;
+                margin-inline-start: 2rem;
+            }
+            & li .svg {
+                width: 2rem;
+                height: 2rem;
+            }
+            & li .clipboard {
+                fill: $accent-color-1;
+            }
+            & li .pencil {
+                fill: $accent-color-3
+            }
+        }
+        & .diy-list {
+            margin-block-end: 1rem;
+        }
+        
+    }
+}

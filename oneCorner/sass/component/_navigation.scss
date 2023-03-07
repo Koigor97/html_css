@@ -1,0 +1,34 @@
+.main-nav {
+
+    &--list {
+        list-style: none;
+        display: flex;
+        gap: 3.2rem;
+
+        & li a:where(:link, :visited) {
+            @include link_button(1.8, $heading-font, 0, 0);
+            color: $font-color-4;
+            display: inline-block; 
+           position: relative;
+        }
+
+        & li a:where(:hover, :active) {
+            color: $secondary-color;
+        }
+
+        & li a::after {
+            content: "";
+            width: 100%;
+            height: 5px; 
+            display: inline-block;
+            position: absolute;
+            bottom: -1.5rem;
+            left: 0;
+            transition: all .2s;
+        }
+
+        & li a:hover::after {
+            background-color: $accent-color-3;           
+        }
+    }
+}

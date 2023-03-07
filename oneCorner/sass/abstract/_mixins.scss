@@ -1,0 +1,16 @@
+@mixin link_button ($size, $font, $pt-b, $pl-r) {
+    display: inline-block;
+    font-size: $size +rem;
+    font-family: $font;
+    padding-block: $pt-b +rem;
+    padding-inline: $pl-r +rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@mixin btn-visual ($color, $bg-color) {
+    color: $color;
+    background-color: $bg-color;
+}
+

@@ -1,0 +1,71 @@
+
+.testimonial-box {
+
+    &__figure {
+        background: $tertiary-color;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow:  0 0 3.2rem 1rem rgba(196, 196, 196, 0.5);
+
+        & blockquote {
+            color: $light-grey-2;
+        }
+
+        &--testimonial-person-box {
+            max-width: 8rem;
+            position: relative;
+
+            & .person-container {
+                aspect-ratio: 1/1.25;
+                display: grid;
+                align-items: end;
+                border-radius: 0 0 100vw 100vw;
+                overflow: hidden;
+                transition: transform 250ms ease-in-out;
+
+                & .bg-circle {
+                    position: absolute;
+                    inset: auto 0 0;
+                    aspect-ratio: 1 / 1;
+                    object-fit: cover;
+                    width: 90%;
+                    border-radius: 50%;
+                    margin-inline: auto;
+                }
+
+                & .person  {
+                    position: relative;
+                    width: 80%;
+                    z-index: 2;
+                    top: -1rem;
+                    left: 1rem;
+                    transform: scale(1.4);
+                    transition: transform 250ms ease-in-out;
+                }
+
+                 & .person:hover {
+                    transform: scale(1.4) translateY(-0.35rem)
+                 }
+            }
+
+            & .person-container:hover {
+                transform: scale(1.1)
+            }
+
+
+        }
+    }
+}
+
+.person-flex-box {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    // justify-content: space-around;
+
+    & .person-detail {
+        align-self: flex-end;
+        color: $font-color-4;
+        font-size: 1.4rem;
+    }
+}

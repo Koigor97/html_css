@@ -1,0 +1,22 @@
+.testimonial {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    & .testimonial-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 3.2rem;
+        gap: 3rem;
+    }
+
+    &__img-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.6rem;
+
+        &--img-grid img {
+            width: 100%;
+            display: block;
+        }
+    }
+}
