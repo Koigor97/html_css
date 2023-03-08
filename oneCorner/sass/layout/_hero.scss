@@ -9,8 +9,10 @@
         padding-inline: 3.2rem;
 
         &--img-box {
+            align-self: start;
 
             &-hero-image {
+                display: block;
                 width: 100%;
             }
         }
@@ -25,8 +27,8 @@
                 display: flex;
 
                 & img {
-                    height: 6.8rem;
-                    width: 6.8rem;
+                    height: 5rem;
+                    width: 5rem;
                     border-radius: 50%;
                     margin-inline-start: -1rem;
                     border: 3px solid $light-grey-2;
@@ -35,7 +37,7 @@
             }
 
             & p {
-                font-size: 1.6rem;
+                font-size: 1.4rem;
             }
         }
     }

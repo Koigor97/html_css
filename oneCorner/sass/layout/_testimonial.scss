@@ -1,22 +1,50 @@
 .testimonial {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 60fr 40fr;
+    // background-color: $primary-color;
+    place-items: center;
 
     & .testimonial-box {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 3.2rem;
+        padding: 9rem 10rem;
         gap: 3rem;
+
+        &__caption-box {
+            grid-column: 1/3;
+
+            & h4 {
+                text-transform: uppercase;
+                font-weight: 900;
+                color: $accent-color-1;
+            }
+
+            & h2 {
+                border-bottom: none;
+            }
+        }
     }
 
     &__img-gallery {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1.6rem;
+        padding: 1.6rem;
+
+        &--img-grid {
+            perspective: 1000px;
+        }
 
         &--img-grid img {
             width: 100%;
             display: block;
+            border-radius: 5px;
+            position: relative;
+            transition: transform .5s;
+        }
+
+        &--img-grid img:hover {
+            transform: rotate3d(-1, -1, 1, 40deg);
         }
     }
 }

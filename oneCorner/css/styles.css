@@ -21,8 +21,8 @@ body {
 body {
   color: #292929;
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 1.6rem;
+  font-weight: 400;
+  font-size: 1.7rem;
   line-height: 1.5; }
 
 .hero-section__hero .heading-primary {
@@ -30,10 +30,8 @@ body {
   font-family: "Mali", cursive;
   font-size: 4.5rem;
   letter-spacing: -0.5px; }
-  .hero-section__hero .heading-primary span:not(:last-of-type) {
+  .hero-section__hero .heading-primary span:not(:last-of-type), .hero-section__hero .heading-primary span:last-of-type {
     color: #FBB822; }
-  .hero-section__hero .heading-primary span:last-of-type {
-    border-bottom: 6px double #FBB822; }
 
 .hero-section__hero--text-box p {
   color: #ffffffe6;
@@ -155,13 +153,14 @@ body {
 
 .hero-section__hero .btn:where(:link, :visited) {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-family: "Mali", cursive;
-  padding-block: 1.6rem;
-  padding-inline: 3.2rem;
+  padding-block: 1.5rem;
+  padding-inline: 3rem;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
+  font-weight: 700;
   border-radius: 2rem;
   transition: all .2s; }
 
@@ -307,8 +306,11 @@ body {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     padding-inline: 3.2rem; }
-    .hero-section__hero--img-box-hero-image {
-      width: 100%; }
+    .hero-section__hero--img-box {
+      align-self: start; }
+      .hero-section__hero--img-box-hero-image {
+        display: block;
+        width: 100%; }
     .hero-section__hero--meet-the-team {
       color: #ffffffe6;
       display: flex;
@@ -317,13 +319,13 @@ body {
       .hero-section__hero--meet-the-team-img {
         display: flex; }
         .hero-section__hero--meet-the-team-img img {
-          height: 6.8rem;
-          width: 6.8rem;
+          height: 5rem;
+          width: 5rem;
           border-radius: 50%;
           margin-inline-start: -1rem;
           border: 3px solid #d7dfd5; }
       .hero-section__hero--meet-the-team p {
-        font-size: 1.6rem; }
+        font-size: 1.4rem; }
 
 .header {
   background-color: #1a1c38;
@@ -334,7 +336,7 @@ body {
   padding: 0 4.8rem; }
 
 .meals {
-  background-color: #F6FDFD;
+  background-color: #fff;
   min-height: 200rem;
   display: grid;
   place-content: center; }
@@ -389,16 +391,33 @@ body {
 
 .testimonial {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: 60fr 40fr;
+  place-items: center; }
   .testimonial .testimonial-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 3.2rem;
+    padding: 9rem 10rem;
     gap: 3rem; }
+    .testimonial .testimonial-box__caption-box {
+      grid-column: 1/3; }
+      .testimonial .testimonial-box__caption-box h4 {
+        text-transform: uppercase;
+        font-weight: 900;
+        color: #FDD172; }
+      .testimonial .testimonial-box__caption-box h2 {
+        border-bottom: none; }
   .testimonial__img-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.6rem; }
+    gap: 1.6rem;
+    padding: 1.6rem; }
+    .testimonial__img-gallery--img-grid {
+      perspective: 1000px; }
     .testimonial__img-gallery--img-grid img {
       width: 100%;
-      display: block; }
+      display: block;
+      border-radius: 5px;
+      position: relative;
+      transition: transform .5s; }
+    .testimonial__img-gallery--img-grid img:hover {
+      transform: rotate3d(-1, -1, 1, 40deg); }

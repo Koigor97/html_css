@@ -2,7 +2,8 @@
     &__hero {
 
         & .btn:where(:link, :visited) {
-            @include link_button(2, $heading-font, 1.6, 3.2);
+            @include link_button(1.6, $heading-font, 1.5, 3);
+            font-weight: 700;
             border-radius: 2rem;
             transition: all .2s;
         }
