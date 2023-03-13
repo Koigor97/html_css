@@ -14,24 +14,37 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="css/styles.css">
-    <title>1Corner Restaurant</title>
+    <title>1Corner Restaurant | Rich spices and bold tastes</title>
     <meta name="description"
         content="1Corner Restaurant is THE restaurant in the Tri-state area of Freetown. 1Corner is a growing restaurant franchise that is specialized in bringing Africanacity to the tongue. With top chefs in the country, the menu doesn't stay locally but travels through the African continent. This website is the Visa.">
 </head>
 
 <body>
-    <header class="header">
-        <img src="images/1corner-logo.webp" alt="The website logo" class="logo">
+    <header class="header" data-visible="false" id="home">
+        <a href="#home">
+            <img src="images/1CLogo.png" alt="The website logo" class="logo">
+        </a>
         <nav class="main-nav">
             <ul class="main-nav--list">
-                <li><a href="#">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#">Pricing</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Event</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#meals">DIY</a></li>
+                <li><a href="#events">Event</a></li>
+                <li><a href="#cta">Join Us</a></li>
             </ul>
-
         </nav>
+
+        <button class="mobile-nav" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="mobile-btn open-btn">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="mobile-btn close-btn">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+
+        </button>
     </header>
 
     <main>
@@ -52,12 +65,12 @@
                     <a href="#" class="btn btn--outline">Explore Menu &rarr;</a>
                     <div class="hero-section__hero--meet-the-team margin-um">
                         <div class="hero-section__hero--meet-the-team-img">
-                            <img src="images/customers/customer-1.jpg" alt="Photos of restaurant chefs">
-                            <img src="images/customers/customer-2.jpg" alt="Photos of restaurant chefs">
-                            <img src="images/customers/customer-3.jpg" alt="Photos of restaurant chefs">
-                            <img src="images/customers/customer-4.jpg" alt="Photos of restaurant chefs">
-                            <img src="images/customers/customer-5.jpg" alt="Photos of restaurant chefs">
-                            <img src="images/customers/customer-6.jpg" alt="Photos of restaurant chefs">
+                            <img src="images/customers/customer-1.webp" alt="Photos of restaurant chefs">
+                            <img src="images/customers/customer-2.webp" alt="Photos of restaurant chefs">
+                            <img src="images/customers/customer-3.webp" alt="Photos of restaurant chefs">
+                            <img src="images/customers/customer-4.webp" alt="Photos of restaurant chefs">
+                            <img src="images/customers/customer-5.webp" alt="Photos of restaurant chefs">
+                            <img src="images/customers/customer-6.webp" alt="Photos of restaurant chefs">
                         </div>
 
                         <p>
@@ -87,7 +100,7 @@
             </div>
         </section>
 
-        <section class="events">
+        <section class="events" id="events">
             <div class=" events__event-caption-box center">
                 <h2 class="secondary-heading margin-ub">
                     The Weekly Events
@@ -96,7 +109,7 @@
             <div class="events__event-box center">
                 <div class="events__event-box--weekly-event">
                     <span>Mon.</span>
-                    <h3 class="heading-tertiary">Fry-fry Wraps Mondays</h3>
+                    <h3 class="heading-tertiary">Fry-fry Wraps</h3>
                     <p class="margin-bs">
                         Every Monday, start your week with our delicious Fry-Fry Wrappers! These crispy delights are
                         sure to satisfy your taste buds. Come over and grab a takeaway
@@ -108,7 +121,7 @@
 
                 <div class="events__event-box--weekly-event">
                     <span>Thu.</span>
-                    <h3 class="heading-tertiary">Cocktail Thursdays</h3>
+                    <h3 class="heading-tertiary">Cocktails</h3>
                     <p class="margin-bs">
                         Here at 1Corner, we like to start your weekend early with our Thursday Cocktails!. Our expert
                         mixologists will whip up the perfect drink to unwind and relax.
@@ -120,7 +133,7 @@
 
                 <div class="events__event-box--weekly-event">
                     <span>Sat.</span>
-                    <h3 class="heading-tertiary">Sausage Saturdays</h3>
+                    <h3 class="heading-tertiary">Sausage Day</h3>
                     <p class="margin-bs">
                         It's Sausage Saturday at 1Corner! Come and indulge in our mouthwatering sausages that are sure
                         to leave you feeling satisfied and happy.
@@ -131,7 +144,7 @@
                 </div>
             </div>
         </section>
-        <section class="meals">
+        <section class="meals" id="meals">
             <div class="meals__diy-meal-box center">
                 <div class="meals__diy-meal-box--intro">
                     <h2 class="secondary-heading">DIY Cooking</h2>
@@ -157,7 +170,7 @@
                                     <li><span><svg class="svg clipboard">
                                                 <use xlink:href="images/sprite.svg#icon-clipboard"></use>
                                             </svg></span> tbsp. lemon juice</li>
-                                    <li><span><svg class="svg clipboard" `>
+                                    <li><span><svg class="svg clipboard">
                                                 <use xlink:href="images/sprite.svg#icon-clipboard"></use>
                                             </svg></span> 2 tbsp. chopped fresh dill</li>
                                     <li><span><svg class="svg clipboard">
@@ -468,7 +481,58 @@
                 </figure>
             </div>
         </section>
+        <section class="cta" id="cta">
+            <div class="cta-3d-effect">
+                <h2 class="secondary-heading">
+                    Join the <span>1Corner</span> family today
+                </h2>
+                <p>Experience the warmth and hospitality of the 1Corner family. Join us today and become part of our
+                    community. Enjoy delicious meals, great company, and unforgettable memories. Sign up now and be the
+                    first to hear about our latest events, exclusive offers, and more.</p>
+
+                <span class="cta-btn">
+                    Join Us
+                </span>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="footer__container grid">
+            <div class="logo-col">
+                <a href="#home" class="footer-logo">
+                    <img src="images/1CLogo.png" alt="Restaurant logo"></a>
+                <ul class="social-link">
+                    <li><a href=""><img src="images/facebook.png" alt="Facebook icon"></a></li>
+                    <li><a href=""><img src="images/instagram.png" alt="Instagram icon"></a></li>
+                    <li><a href=""><img src="images/twitter.png" alt="Twitter icon"></a></li>
+                </ul>
+                <p class="copyright">Copyright &copy; <span id="year"></span> | 1Corner. All Rights Reserved</p>
+            </div>
+            <div class="address-col">
+                <p class="footer-heading">
+                    Contact Us
+                </p>
+                <address class="contacts">
+                    <p>123 Main Street,
+                        City, State ZIP code</p>
+                    <p>
+                        <a href="tel:555-555-5555">555-555-5555</a><br>
+                        <a href="mailto:info@1cornerrestaurant.com">info@1cornerrestaurant.com</a>
+                    </p>
+                </address>
+            </div>
+            <div class="reservation-col">
+                <p class="footer-heading">Reservation</p>
+                <ul class="footer-reservation">
+                    <li><a href="">Make reservation</a></li>
+                    <li><a href="">Special request or Dietry restrictions</a></li>
+                    <li><a href="">Cancellation policy</a></li>
+                    <li><a href="">Additional notes or comment</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/oneCorner.js"></script>
 </body>
 
 </html>

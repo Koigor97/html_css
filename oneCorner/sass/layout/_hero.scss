@@ -1,15 +1,17 @@
 .hero-section {
     background-color: $tertiary-color;
+    padding-block-end: 20rem;
 
     &__hero {
         max-width: 130rem;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         align-items: center;
         padding-inline: 3.2rem;
+        text-align: center;
+        margin-block-start: 6rem;
 
         &--img-box {
-            align-self: start;
 
             &-hero-image {
                 display: block;
@@ -25,6 +27,7 @@
 
             &-img {
                 display: flex;
+                align-self: center;
 
                 & img {
                     height: 5rem;
@@ -40,5 +43,44 @@
                 font-size: 1.4rem;
             }
         }
+
     }
+
+    @media only screen and (min-width: 37.5em) {
+        &__hero {
+            &--meet-the-team {
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 56.7em) {
+        padding-block-end: 35rem;
+
+        &__hero {
+            grid-template-columns: repeat(2, 1fr);
+            text-align: left;
+
+            &--img-box {
+                align-self: start;
+            }
+
+            &--meet-the-team {
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+
+                &-img {
+                    align-self: self-start;
+                }
+            }
+        }
+    }
+
+}
+
+.sticky-nav .hero-section {
+    margin-block-start: 9.6rem;
 }

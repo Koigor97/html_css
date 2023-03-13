@@ -1,0 +1,21 @@
+.footer {
+    padding: 9.6rem;
+    color: #ffffff94;
+    background-color: $tertiary-color;
+
+    &__container {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    @media only screen and (min-width: 56.7em) {
+
+        &__container {
+            grid-template-columns: repeat(3, 1fr);
+            
+        }
+    }
+}

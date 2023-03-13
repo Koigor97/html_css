@@ -1,22 +1,46 @@
 .events {
+    padding-block: 10rem;
 
     &__event-box {
-        height: 30%;
         max-width: 130rem;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
         gap: 5rem;
         padding-inline: 3.2rem;
-        margin-block-end: 15rem;
+        margin-block-end: 10rem;
+        text-align: center;
 
         &--weekly-event {
-            
-
             & div img {
                 max-width: 100%;
                 border-radius: 1rem;
             }
 
+        }
+    }
+
+    @media only screen and (min-width: 37.5em) {
+        &__event-box {
+            grid-template-columns: repeat(auto-fit, minmax(min(250px), 1fr));
+
+            & :last-child {
+                grid-column: 1/3;
+            }
+        }
+
+    }
+
+    @media only screen and (min-width: 56.7em) {
+        padding-block-end:20rem;
+
+        &__event-box {
+            height: 30%;
+            grid-template-columns: repeat(3, 1fr);
+            margin-block-end: 15rem;
+            text-align: left;
+
+            & :last-child {
+                grid-column: auto;
+            }
         }
     }
 }

@@ -1,25 +1,17 @@
 .meals {
-    background-color: #fff;
-    min-height: 200rem;
 
     display: grid;
     place-content: center;
 
     &__diy-meal-box {
-        background-color: #fff;
-        max-width: 130rem;
-        border-radius: 1.5rem;
         padding: 3.2rem;
         box-shadow: $box-shadow-2;
         // overflow: hidden;
 
-
         &--grid-box {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            align-items: center;
-            gap: 15rem 5rem;
-            
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
 
             &--food-img div {
                 max-width: 40rem;
@@ -42,44 +34,87 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%) rotate(45deg);
-                
+
             }
 
             &--food-img div::before {
                 // background-color: #1a1c37;;
-                width: 40rem;
-                height: 40rem;
+                width: 35rem;
+                height: 35rem;
                 z-index: -2;
                 border: 6px double #1a1c3777;
-                
+
             }
 
             &--food-img div::after {
                 // background-color: #d7dfd5;
-                width: 30rem;
-                height: 30rem;
+                width: 25rem;
+                height: 25rem;
                 z-index: -1;
                 border: 6px dotted #d7dfd5c5;
-            }
-
-            & .food-2 {
-                grid-column: 2/3;
-                grid-row: 2/3;
-            }
-
-            & .food-img-2 {
-                grid-column: 1/2;
-                grid-row: 2/3;
-            }
-
-            &--grilled-fact, &--roasted-fact {
-                grid-row: 3/4;
             }
 
             & :has(.fact-1) {
                 align-self: self-start;
             }
 
+        }
+    }
+
+    @media only screen and (min-width: 56.7em) {
+        .meals {
+
+            &__diy-meal-box {
+                max-width: 130rem;
+                border-radius: 1.5rem;
+                // overflow: hidden;
+
+
+                &--grid-box {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    align-items: center;
+                    gap: 15rem 5rem;
+
+
+                    &--food-img div::before {
+                        // background-color: #1a1c37;;
+                        width: 40rem;
+                        height: 40rem;
+                        z-index: -2;
+                        border: 6px double #1a1c3777;
+
+                    }
+
+                    &--food-img div::after {
+                        // background-color: #d7dfd5;
+                        width: 30rem;
+                        height: 30rem;
+                        z-index: -1;
+                        border: 6px dotted #d7dfd5c5;
+                    }
+
+                    & .food-2 {
+                        grid-column: 2/3;
+                        grid-row: 2/3;
+                    }
+
+                    & .food-img-2 {
+                        grid-column: 1/2;
+                        grid-row: 2/3;
+                    }
+
+                    &--grilled-fact,
+                    &--roasted-fact {
+                        grid-row: 3/4;
+                    }
+
+                    & :has(.fact-1) {
+                        align-self: self-start;
+                    }
+
+                }
+            }
         }
     }
 }

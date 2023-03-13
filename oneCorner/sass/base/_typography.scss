@@ -9,7 +9,6 @@
 body {
     color: $font-color-2;
     font-family: $body-font;
-    font-weight: 400;
     font-size: 1.7rem;
     line-height: 1.5;
 
@@ -25,7 +24,8 @@ body {
             font-size: 4.5rem;
             letter-spacing: -0.5px;
 
-            & span:not(:last-of-type), & span:last-of-type {
+            & span:not(:last-of-type),
+            & span:last-of-type {
                 color: $secondary-color;
             }
 
@@ -116,46 +116,248 @@ body {
         }
 
         &--intro p {
-            max-width: 80rem;
+            // max-width: 80rem;
             margin: 0 auto;
 
         }
 
         &--grid-box--food-grid {
+            // text-align: center;
 
             & h3 {
                 margin-block-end: 1rem;
+                text-align: center;
             }
 
-            & .ingredient-box p, & .instruction-box p {
+            & .ingredient-box p,
+            & .instruction-box p {
                 margin-block-end: 5px;
                 font-size: 1.7rem;
                 text-transform: uppercase;
                 font-weight: 600;
             }
+
         }
-        & .diy-list, & .diy-order-list, & .nutri-facts {
+
+        & .diy-list,
+        & .diy-order-list,
+        & .nutri-facts {
             list-style: none;
+
             & li {
                 display: flex;
-                align-items: start;
+                align-items: flex-start;
                 gap: 5px;
                 margin-inline-start: 2rem;
+
             }
+
             & li .svg {
                 width: 2rem;
                 height: 2rem;
             }
+
             & li .clipboard {
-                fill: $accent-color-1;
+                all: $accent-color-1;
             }
+
             & li .pencil {
-                fill: $accent-color-3
+                all: $accent-color-3
             }
         }
+
         & .diy-list {
             margin-block-end: 1rem;
         }
-        
+
     }
+}
+
+.cta-3d-effect {
+    text-align: center;
+
+    & h2 span {
+        color: $secondary-color;
+    }
+
+    & .cta-btn {
+        background-color: $secondary-color;
+        color: $font-color-3;
+        width: 80%;
+        padding-block: 5px;
+        padding-inline: 2rem;
+        border-radius: 5rem;
+        box-shadow: 0 0 3.2rem 1.5rem rgba(0, 0, 0, 0.10);
+        cursor: pointer;
+    }
+
+}
+
+.footer-heading {
+    color: $font-color-4;
+    margin-block-end: 1rem;
+}
+
+.footer {
+    &__container {
+
+
+        & .logo-col {
+
+            & .footer-logo {
+                display: inline-block;
+            }
+
+            & .footer-logo,
+            & .social-link {
+                margin-block-end: 2rem;
+            }
+
+            & ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                gap: 2.5rem;
+                
+                & img {
+                    height: 3.5rem;
+                    
+                }
+            }
+
+            & p {
+                font-size: 1.5rem;
+            }
+        }
+
+        & .address-col a,
+        & .reservation-col a {
+            color: currentColor;
+            text-decoration: none;
+        }
+
+        & .reservation-col li {
+            list-style: none;
+        }
+    }
+
+    &__container * ul li:hover,
+    &__container * p a:hover {
+        color: $font-color-4;
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (min-width: 37.5em) {
+    .meals {
+        // color: $font-color-shade-3;
+
+        &__diy-meal-box {
+
+            &--intro h2 {
+                margin-block-start: 4rem;
+                margin-block-end: 2rem;
+            }
+
+            &--intro p {
+                max-width: 80rem;
+                margin: 0 auto;
+
+            }
+
+            &--grid-box--food-grid {
+
+                & h3 {
+                    margin-block-end: 1rem;
+                    text-align: left;
+                }
+
+                & .ingredient-box p,
+                & .instruction-box p {
+                    margin-block-end: 5px;
+                    font-size: 1.7rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+            }
+
+            & .diy-list,
+            & .diy-order-list,
+            & .nutri-facts {
+                list-style: none;
+
+                & li {
+                    display: flex;
+                    align-items: start;
+                    gap: 5px;
+                    margin-inline-start: 2rem;
+                }
+
+                & li .svg {
+                    width: 2rem;
+                    height: 2rem;
+                }
+
+                & li .clipboard {
+                    fill: $accent-color-1;
+                }
+
+                & li .pencil {
+                    fill: $accent-color-3
+                }
+            }
+
+            & .diy-list {
+                margin-block-end: 1rem;
+            }
+
+        }
+    }
+
+    .footer {
+        &__container {
+
+
+            & .logo-col {
+
+                & .footer-logo {
+                    display: inline-block;
+                }
+
+                & .footer-logo,
+                & .social-link {
+                    margin-block-end: 2rem;
+                }
+
+                & ul {
+                    justify-content: center;
+
+                    & img {
+                        height: 3.5rem;
+                    }
+                }
+
+                & p {
+                    font-size: 1.5rem;
+                }
+            }
+
+            & .address-col a,
+            & .reservation-col a {
+                color: currentColor;
+                text-decoration: none;
+            }
+
+            & .reservation-col li {
+                list-style: none;
+            }
+        }
+
+        &__container * ul li:hover,
+        &__container * p a:hover {
+            color: $font-color-4;
+            text-decoration: underline;
+        }
+    }
+
 }

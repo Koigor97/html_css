@@ -1,28 +1,50 @@
 .featuredIn {
-    
-
     &__featured-box {
         background-color: $light-grey-2;
-        max-width: 130rem;
         padding-inline: 3.2rem;
         padding-block: 3rem 6rem;
-        border-radius: 1rem;
-        
-        position: relative;
-        top: 50%;
-        left: 0%;
-        transform: translate(0, -50%);
 
         &--brands {
-            height: 100%;
-            display: flex;
-            justify-content: space-around;
+            display: grid;
+            justify-content: center;
             align-items: center;
+            text-align: center;
+            gap: 3rem;
 
             & img {
                 max-width: 100%;
                 filter: brightness(0) drop-shadow(2px 4px 4px #00000069);
                 opacity: 0.25;
+                margin: auto;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 37.5em) {
+        &__featured-box {
+            &--brands {
+                grid-template-columns: repeat(auto-fit, minmax(min(300px), 1fr));
+            }
+        }
+    }
+
+    @media only screen and (min-width: 56.7em) {
+        .featuredIn {
+
+            &__featured-box {
+                max-width: 130rem;
+                border-radius: 1rem;
+
+                position: relative;
+                top: 50%;
+                left: 0%;
+                transform: translate(0, -50%);
+
+                &--brands {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
             }
         }
     }
